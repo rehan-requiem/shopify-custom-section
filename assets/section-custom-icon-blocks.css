@@ -26,9 +26,8 @@
   margin-bottom: 10px;
 }
 
-.button {
-  border: none;
-  outline: none;
+.custom-btn {
+  padding: 10px 30px;
 }
 
 @media (max-width: 500px) {
