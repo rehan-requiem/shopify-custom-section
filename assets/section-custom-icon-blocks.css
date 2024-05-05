@@ -9,6 +9,8 @@
 
 .custom-badge {
   text-align: center;
+  height: fit-content;
+  width: fit-content;
 }
 
 .custom-badge p {
