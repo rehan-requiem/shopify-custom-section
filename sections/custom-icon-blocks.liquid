@@ -1,6 +1,6 @@
 {{ 'section-custom-icon-blocks.css' | asset_url | stylesheet_tag }}
 
-<div class="icon-blocks">
+<div class="icon-blocks page-width">
   <div class="badges-container">
     {% for block in section.blocks %}
       <div style="background-color: {{ block.settings.background_color }}" class="custom-badge">
