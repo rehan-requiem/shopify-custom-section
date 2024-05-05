@@ -1,3 +1,10 @@
+.icon-blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .badges-container {
   display: flex;
   align-items: center;
