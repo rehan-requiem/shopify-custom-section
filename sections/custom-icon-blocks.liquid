@@ -1,43 +1,91 @@
 {{ 'section-custom-icon-blocks.css' | asset_url | stylesheet_tag }}
 
 <div class="badges-container">
-  <div class="custom-badge">
+  {% for block in section.blocks %}
+    <div class="custom-badge">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/diamond.png?v=1677663234"
+        alt=""
+        class="badge-img">
+      <p class="badge-description">{{ block.settings.description_text }}</p>
+    </div>
+  {% endfor %}
+ {% comment %} <div class="custom-badge">
     <img
       src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/diamond.png?v=1677663234"
       alt=""
       class="badge-img">
-    <p>Premium Quality</p>
+    <p class="badge-description">{{ block.settings.description_text }}</p>
   </div>
 
-  <div class="custom-badge">
-    <img
-      src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/quality.png?v=1677663234"
-      alt=""
-      class="badge-img">
-    <p>Secure Checkout</p>
-  </div>
-
-  <div class="custom-badge">
-    <img
-      src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/star.png?v=1677663234"
-      alt=""
-      class="badge-img">
-    <p>Unique Designs</p>
-  </div>
-
-  <div class="custom-badge">
-    <img
-      src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/delivery.png?v=1677663234"
-      alt=""
-      class="badge-img">
-    <p>Free Delivery</p>
-  </div>
+ <div class="custom-badge">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/quality.png?v=1677663234"
+            alt=""
+            class="badge-img">
+          <p class="badge-description">Secure Checkout</p>
+        </div>
+      
+        <div class="custom-badge">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/star.png?v=1677663234"
+            alt=""
+            class="badge-img">
+          <p class="badge-description">Unique Designs</p>
+        </div>
+      
+        <div class="custom-badge">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/delivery.png?v=1677663234"
+            alt=""
+            class="badge-img">
+          <p class="badge-description">Free Delivery</p>
+  </div> {% endcomment %}
 </div>
+
+<style>
+
+  .badges-container {
+    background-color: {{ section.settings.background_color }};
+  }
+  .custom-badge .badge-description {
+
+    color: {{ section.settings.description_color }}
+  }
+</style>
 
 {% schema %}
   {
     "name": "Icon Blocks",
-    "settings": [],
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#ffffff"
+
+      }
+    ],
+    "blocks": [
+      {
+        "name": "icon",
+        "type": "icon",
+        "settings": [
+          {
+            "type": "text",
+            "id": "description_text",
+            "label": "Description text",
+            "default": "Icon description"
+          },
+          {
+            "type": "color",
+            "id": "description_color",
+            "label": "Description color",
+            "default": "#3F63C8"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Icon Blocks"
