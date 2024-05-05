@@ -19,6 +19,11 @@
     background-color: {{ section.settings.background_color }};
   }
 
+  .badges-container {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
   .custom-badge {
     background-color: #eeeeee;
     padding: 1.5rem 2rem;
@@ -38,6 +43,26 @@
         "label": "Background color",
         "default": "#ffffff"
 
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 16
       }
     ],
     "blocks": [
