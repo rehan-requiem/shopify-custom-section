@@ -7,7 +7,7 @@
         {{ block.settings.icon_html }}
         <h3 class="badge-title" style="">{{ block.settings.icon_title }}</h3>
         <p style="color: {{ block.settings.description_color }}" class="badge-description">{{ block.settings.description_text }}</p>
-        
+        <a class="button button--primary" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</a>
       </div>
     {% endfor %}
   </div>
@@ -107,6 +107,17 @@
             "id": "background_color",
             "label": "Background color",
             "default": "#eeeeee"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label"
+          },
+
+          {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button link"
           }
         ]
       }
