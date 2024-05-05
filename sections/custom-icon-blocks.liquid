@@ -1,17 +1,15 @@
 {{ 'section-custom-icon-blocks.css' | asset_url | stylesheet_tag }}
 
-
 <div class="section-container">
   <div class="badges-container">
     {% for block in section.blocks %}
-           
       <div style="background-color: {{ block.settings.background_color }}; {% if block.settings.show_shadow %}box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); {% endif %}" class="custom-badge">
         {{ block.settings.icon_html }}
         <h3 class="badge-title inline-richtext h2" style="color: {{ block.settings.title_color }}">{{ block.settings.icon_title }}</h3>
         <p style="color: {{ block.settings.description_color }}" class="badge-description">{{ block.settings.description_text }}</p>
         <a
           style="background-color: {{ block.settings.button_color }};"
-          class="button button--primary"
+          class="button"
           href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</a>
       </div>
     {% endfor %}
@@ -36,6 +34,8 @@
     border-radius: 5px;
   }
 
+
+  .icon-title {}
 </style>
 
 {% schema %}
