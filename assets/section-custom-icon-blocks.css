@@ -7,7 +7,7 @@
   justify-content: flex-start;
   margin-inline: auto;
   padding-inline: 5rem;
-  gap: 17px;
+  gap: 16px;
 }
 
 .badge-title {
@@ -22,7 +22,7 @@
   align-items: center;
   height: fit-content;
   gap: 10px;
-  min-width: 253px;
+  min-width: 252px;
   padding: 10px;
 }
 
