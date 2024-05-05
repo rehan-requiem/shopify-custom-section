@@ -7,6 +7,10 @@
   margin-inline: auto;
 }
 
+.badge-title {
+  font-weight: bold;
+}
+
 .custom-badge {
   text-align: center;
   height: fit-content;
