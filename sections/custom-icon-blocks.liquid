@@ -3,12 +3,7 @@
 <div class="badges-container">
   {% for block in section.blocks %}
     <div style="background-color: {{ block.settings.background_color }}" class="custom-badge">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/diamond.png?v=1677663234"
-        alt=""
-        class="badge-img"
-        height="50"
-        width="50">
+      {{ block.settings.icon_html }}
       <p style="color: {{ block.settings.description_color }}" class="badge-description">{{ block.settings.description_text }}</p>
     </div>
   {% endfor %}
