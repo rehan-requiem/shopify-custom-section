@@ -1,0 +1,23 @@
+.badges-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.custom-badge {
+  text-align: center;
+  width: 25%;
+}
+
+.custom-badge p {
+  font-size: 14px;
+  font-family: var(--font-heading-family);
+  font-weight: bold;
+  margin: 0;
+}
+
+.badge-img {
+  width: 50px;
+  margin-bottom: 5px;
+  position: absoloute;
+}

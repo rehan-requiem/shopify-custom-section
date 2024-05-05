@@ -1,0 +1,47 @@
+{{ 'section-custom-icon-blocks.css' | asset_url | stylesheet_tag }}
+
+<div class="badges-container">
+  <div class="custom-badge">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/diamond.png?v=1677663234"
+      alt=""
+      class="badge-img">
+    <p>Premium Quality</p>
+  </div>
+
+  <div class="custom-badge">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/quality.png?v=1677663234"
+      alt=""
+      class="badge-img">
+    <p>Secure Checkout</p>
+  </div>
+
+  <div class="custom-badge">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/star.png?v=1677663234"
+      alt=""
+      class="badge-img">
+    <p>Unique Designs</p>
+  </div>
+
+  <div class="custom-badge">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0727/7278/0353/files/delivery.png?v=1677663234"
+      alt=""
+      class="badge-img">
+    <p>Free Delivery</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Icon Blocks",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Icon Blocks"
+      }
+    ]
+  }
+{% endschema %}
