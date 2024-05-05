@@ -26,6 +26,11 @@
   margin-bottom: 10px;
 }
 
+.button {
+  border: none;
+  outline: none;
+}
+
 @media (max-width: 500px) {
   .badges-container {
     justify-content: center;

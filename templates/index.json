@@ -60,9 +60,9 @@
             "description_color": "#ffffff",
             "background_color": "#3cb4e8",
             "show_shadow": false,
-            "button_label": "",
+            "button_label": "Shop",
             "button_url": "",
-            "button_color": ""
+            "button_color": "#d62b2b"
           }
         }
       },
