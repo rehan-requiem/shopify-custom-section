@@ -45,6 +45,7 @@
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
+  margin: 0;
 }
 
 .custom-btn:hover {
