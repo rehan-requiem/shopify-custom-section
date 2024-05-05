@@ -26,6 +26,9 @@
   margin-bottom: 10px;
 }
 
+.button::after {
+  display: none;
+}
 
 @media (max-width: 500px) {
   .badges-container {
