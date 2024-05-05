@@ -5,6 +5,7 @@
   {% for block in section.blocks %}
     <div style="background-color: {{ block.settings.background_color }}" class="custom-badge">
       {{ block.settings.icon_html }}
+      <h3 style="">{{ block.settings.icon_title }}</h3>
       <p style="color: {{ block.settings.description_color }}" class="badge-description">{{ block.settings.description_text }}</p>
     </div>
   {% endfor %}
@@ -54,6 +55,10 @@
     padding: 1.5rem 2rem;
     border-radius: 5px;
   }
+
+  .icon-title {
+    
+  }
 </style>
 
 {% schema %}
@@ -78,6 +83,18 @@
             "id": "icon_html",
             "label": "Icon svg",
             "info": "You may get svg icons from libraries like [Bootstrap Icons](https://icons.getbootstrap.com)"
+          },
+          {
+            "type": "text",
+            "id": "icon_title",
+            "label": "Title",
+            "default": "Icon title"
+          },
+          {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title color",
+            "default": "#000000"
           },
 
           {
