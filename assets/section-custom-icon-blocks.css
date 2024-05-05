@@ -28,6 +28,8 @@
 
 .custom-btn {
   padding: 10px 30px;
+  border: none;
+  outline: none;
 }
 
 @media (max-width: 500px) {
