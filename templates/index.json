@@ -24,7 +24,7 @@
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "Button label",
-            "button_link_2": "",
+            "button_link_2": "shopify:\/\/products\/chiropractic-pillow",
             "button_style_secondary_2": false
           }
         }
@@ -59,8 +59,10 @@
             "description_text": "Icon description",
             "description_color": "#ffffff",
             "background_color": "#3cb4e8",
+            "show_shadow": false,
             "button_label": "",
-            "button_url": ""
+            "button_url": "",
+            "button_color": ""
           }
         }
       },
