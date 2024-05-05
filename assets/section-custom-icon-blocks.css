@@ -1,11 +1,17 @@
-.badges-container {
+/* .badges-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 50px;
   margin-inline: auto;
+} */
+.badges-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
 }
+
 
 .badge-title {
   font-weight: bold;
