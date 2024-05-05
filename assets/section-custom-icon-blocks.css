@@ -26,8 +26,8 @@
   margin-bottom: 10px;
 }
 
-.button::after {
-  display: none;
+.button:hover {
+opacity: .8;
 }
 
 @media (max-width: 500px) {
