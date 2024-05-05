@@ -65,7 +65,7 @@
             "button_color": "#cc4242"
           }
         },
-        "icon_eaXmNr": {
+        "icon_pCe3yi": {
           "type": "icon",
           "settings": {
             "icon_html": "",
@@ -80,7 +80,7 @@
             "button_color": ""
           }
         },
-        "icon_PdFekB": {
+        "icon_6giHRe": {
           "type": "icon",
           "settings": {
             "icon_html": "",
@@ -95,7 +95,7 @@
             "button_color": ""
           }
         },
-        "icon_AXzDnh": {
+        "icon_AzYF6g": {
           "type": "icon",
           "settings": {
             "icon_html": "",
@@ -113,9 +113,9 @@
       },
       "block_order": [
         "icon_M98aB8",
-        "icon_eaXmNr",
-        "icon_PdFekB",
-        "icon_AXzDnh"
+        "icon_pCe3yi",
+        "icon_6giHRe",
+        "icon_AzYF6g"
       ],
       "settings": {
         "background_color": "#3cb4e8",
