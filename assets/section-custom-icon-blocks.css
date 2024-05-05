@@ -31,6 +31,10 @@
   margin: 0;
 }
 
+.custom-badge svg {
+  margin: 0;
+}
+
 .custom-btn {
   display: inline-flex;
   justify-content: center;
