@@ -1,7 +1,10 @@
 .badges-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  margin: 10px 0;
+  justify-items: center;
+  
+  padding: 1rem;
 }
 
 .custom-badge {
