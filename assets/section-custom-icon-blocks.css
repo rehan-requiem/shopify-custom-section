@@ -6,15 +6,23 @@
   gap: 50px;
   margin-inline: auto;
 } */
-.badges-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
+
+.badges-container {
+  display: flex;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-inline: auto;
-  padding-block: 1rem;
+  padding: 1rem 5rem;
+  gap: 10px;
 }
 
 .badge-title {
   font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .custom-badge {
@@ -24,12 +32,35 @@
   padding: 1rem;
 }
 
-.custom-badge p {
+.custom-badge .badge-description {
   font-size: 16px;
+  margin: 0;
 }
 
 .badge-img {
   width: 50px;
   margin-bottom: 5px;
   position: absoloute;
+}
+
+@media (max-width: 500px) {
+  .badges-container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .custom-badge {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .badges-container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .custom-badge {
+    width: 80%;
+  }
 }
