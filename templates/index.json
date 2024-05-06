@@ -65,8 +65,8 @@
             "button_url": "",
             "button_color": "#000000",
             "button_label-color": "#ffffff",
-            "is_corner-rounded": true,
-            "button_rounding": "full"
+            "is_corner-rounded": false,
+            "button_rounding": "small"
           }
         },
         "icon_JpTfzy": {
