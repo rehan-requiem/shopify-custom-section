@@ -33,12 +33,9 @@
 }
 
 .custom-btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   border: 0;
   padding: 1rem 4rem;
-  width: auto;
   cursor: pointer;
   font: inherit;
   font-size: 1.5rem;
