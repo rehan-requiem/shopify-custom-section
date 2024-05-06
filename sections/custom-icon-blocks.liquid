@@ -4,7 +4,7 @@
 <div class="section-container">
   <div class="badges-container">
     {% for block in section.blocks %}
-
+      
       {% if block.settings.text_alignment == "center" %}
         {% assign items_alignment = 'center' %}
       {% else if block.settings.text_alignment == 'left' %}
@@ -22,6 +22,9 @@
           {%  assign button_rounding = "100vmax" %}
       {% endcase %}
       
+      <style>
+        {% if block.settings.is_corner-rounded %} border-radius: {{ button_rounding }} {% endif %}
+      </style>
            
       <div style="background-color: {{ block.settings.background_color }}; {% if block.settings.show_shadow %}box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); {% endif %} text-align: {{ items_alignment }}; align-items: {{ items_alignment }}" class="custom-badge">
         {{ block.settings.icon_html }}
