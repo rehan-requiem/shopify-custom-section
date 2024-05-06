@@ -19,11 +19,9 @@
 .custom-badge {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   gap: 10px;
   width: 250px;
   padding: 10px;
-  text-align: left;
 }
 
 .custom-badge .badge-description {
