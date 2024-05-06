@@ -11,13 +11,22 @@
         {% assign items_alignment = 'left' %}
       {% endif %}
         
-      {% if block.settings.button_rounding == "small" %}
+      {% comment %} {% if block.settings.button_rounding == "small" %}
         {%  assign button_rounding = "5px" %}
       {% else if block.settings.button_rounding == "full" %}
         {% assign button_rounding = "100vmax" %}
       {% else if block.settings.button_rounding == "medium" %}
         {% assign button_rounding = "10px" %}
-      {% endif %}
+      {% endif %} {% endcomment %}
+
+      {% case block.settings.button_rounding %}
+        {% when "small" %}
+          {%  assign button_rounding = "5px" %}
+        {% when "medium" %}
+          {%  assign button_rounding = "10px" %}
+        {% when "full" %}
+          {%  assign button_rounding = "100vmax" %}
+      {% endcase %}
       
            
       <div style="background-color: {{ block.settings.background_color }}; {% if block.settings.show_shadow %}box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); {% endif %} text-align: {{ items_alignment }}; align-items: {{ items_alignment }}" class="custom-badge">
