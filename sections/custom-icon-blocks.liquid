@@ -14,8 +14,10 @@
       {% case block.settings.button_rounding %}
         {% when "small" %}
           {%  assign button_rounding = "5px" %}
+        
         {% when "medium" %}
           {%  assign button_rounding = "10px" %}
+        
         {% when "full" %}
           {%  assign button_rounding = "100vmax" %}
       {% endcase %}
