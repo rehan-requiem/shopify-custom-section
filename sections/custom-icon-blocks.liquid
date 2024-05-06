@@ -4,6 +4,11 @@
 <div class="section-container">
   <div class="badges-container">
     {% for block in section.blocks %}
+      {% if block.settings.text_alignment == "center" %}
+        {% assign text_alignment = center %}
+      {% else if block.settings.text_alignment == 'left' %}
+        {% assign text_alignment = left %}
+      {% endif %}
            
       <div style="background-color: {{ block.settings.background_color }}; {% if block.settings.show_shadow %}box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); {% endif %} " class="custom-badge">
         {{ block.settings.icon_html }}
