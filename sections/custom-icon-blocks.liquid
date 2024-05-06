@@ -7,8 +7,10 @@
 
       {% if block.settings.text_alignment == "center" %}
         {% assign text_alignment = 'center' %}
+        {% assign items_alignment = 'center' %}
       {% else if block.settings.text_alignment == 'left' %}
         {% assign text_alignment = 'left' %}
+        {% assign items_alignment = 'left' %}
       {% endif %}
       
            
