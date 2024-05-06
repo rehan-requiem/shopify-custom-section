@@ -12,7 +12,7 @@
       {% endif %}
       
            
-      <div style="background-color: {{ block.settings.background_color }}; {% if block.settings.show_shadow %}box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); {% endif %} text-align: {{ text_alignment }}" class="custom-badge">
+      <div style="background-color: {{ block.settings.background_color }}; {% if block.settings.show_shadow %}box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); {% endif %} text-align: {{ text_alignment }}; align-items: {{ text_alignment }}" class="custom-badge">
         {{ block.settings.icon_html }}
         <h3 class="badge-title" style="color: {{ block.settings.title_color }}">{{ block.settings.icon_title }}</h3>
         <p style="color: {{ block.settings.description_color }}" class="badge-description">{{ block.settings.description_text }}</p>
