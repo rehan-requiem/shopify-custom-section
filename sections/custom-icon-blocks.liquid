@@ -13,10 +13,10 @@
         
       {% if block.settings.button_rounding == "small" %}
         {%  assign button_rounding = "5px" %}
-      {% else if block.settings.button_rounding == "medium" %}
-        {% assign button_rounding = "10px" %}
       {% else if block.settings.button_rounding == "full" %}
         {% assign button_rounding = "100vmax" %}
+      {% else if block.settings.button_rounding == "medium" %}
+        {% assign button_rounding = "10px" %}
       {% endif %}
       
            
