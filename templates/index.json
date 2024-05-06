@@ -64,7 +64,9 @@
             "button_label": "Button label",
             "button_url": "",
             "button_color": "#000000",
-            "button_label-color": "#ffffff"
+            "button_label-color": "#ffffff",
+            "is_corner-rounded": true,
+            "button_rounding": "medium"
           }
         },
         "icon_JpTfzy": {
@@ -81,7 +83,9 @@
             "button_label": "Button label",
             "button_url": "",
             "button_color": "#000000",
-            "button_label-color": "#ffffff"
+            "button_label-color": "#ffffff",
+            "is_corner-rounded": false,
+            "button_rounding": "small"
           }
         },
         "icon_He7BhD": {
@@ -98,7 +102,9 @@
             "button_label": "Button label",
             "button_url": "",
             "button_color": "#000000",
-            "button_label-color": "#ffffff"
+            "button_label-color": "#ffffff",
+            "is_corner-rounded": false,
+            "button_rounding": "small"
           }
         },
         "icon_eckqeR": {
@@ -115,7 +121,9 @@
             "button_label": "Button label",
             "button_url": "",
             "button_color": "#000000",
-            "button_label-color": "#ffffff"
+            "button_label-color": "#ffffff",
+            "is_corner-rounded": false,
+            "button_rounding": "small"
           }
         }
       },
@@ -124,6 +132,9 @@
         "icon_JpTfzy",
         "icon_He7BhD",
         "icon_eckqeR"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "background_color": "#3cb4e8",
