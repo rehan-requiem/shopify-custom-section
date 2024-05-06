@@ -10,6 +10,16 @@
       {% else if block.settings.text_alignment == 'left' %}
         {% assign items_alignment = 'left' %}
       {% endif %}
+        
+      {% liquid
+          if block.settings.button_rounding == "small"
+            assign button_rounding = "5px"
+          else if
+            assign button_rounding = "10px"
+          else if
+            assign button_rounding = "100vmax"
+          endif
+      %}
       
            
       <div style="background-color: {{ block.settings.background_color }}; {% if block.settings.show_shadow %}box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); {% endif %} text-align: {{ items_alignment }}; align-items: {{ items_alignment }}" class="custom-badge">
