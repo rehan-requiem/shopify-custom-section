@@ -23,7 +23,12 @@
       {% endcase %}
       
       <style>
-        {% if block.settings.is_corner-rounded %} border-radius: {{ button_rounding }} {% endif %}
+        {% if block.settings.is_corner-rounded %}
+          .custom-btn {
+          border-radius: {{ button_rounding }}            
+          }
+          
+          {% endif %}
       </style>
            
       <div style="background-color: {{ block.settings.background_color }}; {% if block.settings.show_shadow %}box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); {% endif %} text-align: {{ items_alignment }}; align-items: {{ items_alignment }}" class="custom-badge">
