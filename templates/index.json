@@ -65,7 +65,7 @@
             "button_url": "",
             "button_color": "#000000",
             "button_label-color": "#ffffff",
-            "is_corner-rounded": true,
+            "is_corner-rounded": false,
             "button_rounding": "small"
           }
         },
