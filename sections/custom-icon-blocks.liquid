@@ -54,6 +54,9 @@
     background-color: #eeeeee;
     padding: 1.5rem 2rem;
     border-radius: 5px;
+    {% if section.settings.uniform_height %}
+      height: fit-content;
+    {% endif %}}
   }
 
 </style>
