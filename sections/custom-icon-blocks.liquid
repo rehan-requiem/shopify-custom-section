@@ -54,9 +54,9 @@
     background-color: #eeeeee;
     padding: 1.5rem 2rem;
     border-radius: 5px;
-    {% if section.settings.uniform_height %}
+    {% if section.settings.card_height == 'uniform' %}
       height: auto;
-    {% else %}
+    {% elsif section.settings.card_height == 'fit-content' %}
       height: fit-content;
     {% endif %}}
   }
